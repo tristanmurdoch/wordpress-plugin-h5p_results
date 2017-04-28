@@ -14,3 +14,12 @@ A 5hp-results directory that contains the source code - a fully executable WordP
 
 Shortcodes are as follows.
 
+[h5p_results]                           Results listed for Current User 
+
+[h5p_results userid=”1″]                Results listed for defined user. 
+
+[h5p_results display=”row”]             Results as a row for Current User.
+
+[h5p_results display=”row” userid=”1″]  Results as a row for defined user.
+
+[h5p_results userid=”all”]              Results as a row for all users.
