@@ -23,7 +23,8 @@ function h5p_results_func($atts){
 
  	$atts = shortcode_atts( array(
         	'display' => 'list',
-			'userid' => 'none',
+		'tablename' => 'H5P Results',
+		'userid' => 'none',
     	), $atts );
 
 
@@ -99,7 +100,7 @@ function h5p_results_func($atts){
 		$results = $wpdb->get_results($sql);
 
 		$html = '<table>
-				<caption>H5P Results</caption>
+				<caption>'.$atts['tablename'].'</caption>
 				<thead>
 				<tr>
 				<th scope="col">Title</th>
@@ -130,7 +131,7 @@ function h5p_results_func($atts){
 				$minutes.':'.$seconds.'</td></tr>';
 				}
 		}else{
-		$html .= '<tr><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>';
+		$html .= '<tr><td colspan="5">No results</td></tr>';
 		}
 	$html .= '</tbody></table>';
 
