@@ -4,7 +4,7 @@
  * Description: Adds custom shortcodes for H5P results.
  * Author: Tristan Mackay
  * Version: 1.0
- * Text Domain: h5p-shortcodes
+ * Text Domain: h5p-results
  *
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
